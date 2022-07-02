@@ -1,1 +1,1 @@
-# leage-calc-api
+# league-calc-api
