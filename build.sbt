@@ -1,6 +1,6 @@
 val ScalatraVersion = "2.8.2"
 
-ThisBuild / scalaVersion := "2.13.8"
+ThisBuild / scalaVersion := "2.12.8"
 ThisBuild / organization := "com.github.lucasrsa"
 
 lazy val hello = (project in file("."))
@@ -10,9 +10,10 @@ lazy val hello = (project in file("."))
     libraryDependencies ++= Seq(
       "org.scalatra" %% "scalatra" % ScalatraVersion,
       "org.scalatra" %% "scalatra-scalatest" % ScalatraVersion % "test",
-      "ch.qos.logback" % "logback-classic" % "1.2.3" % "runtime",
-      "org.eclipse.jetty" % "jetty-webapp" % "9.4.35.v20201120" % "container",
-      "javax.servlet" % "javax.servlet-api" % "3.1.0" % "provided"
+      "ch.qos.logback" % "logback-classic" % "1.2.11" % "runtime",
+      "org.eclipse.jetty" % "jetty-webapp" % "11.0.9" % "container",
+      "javax.servlet" % "javax.servlet-api" % "4.0.1" % "provided",
+      "org.apache.spark" %% "spark-sql" % "3.2.1"
     ),
   )
 
